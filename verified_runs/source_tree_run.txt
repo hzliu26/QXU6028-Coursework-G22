@@ -1,0 +1,6 @@
+Reproduction started 2026-11-23T13:19:13.901508+00:00 | commit be7c6f0ff54c0d417dd602932d0225640f2bc1dd
+Analysed regular data (regular_G22)
+regular | L1 C=2.987648 | L2 hard_gap, Eg/kT=3 | L3 peak=2.83588%, clear pass | checks passed
+Analysed blind data (blind_G22)
+blind | L1 C=3.167773 | L2 cone, Eg/kT=0 | L3 peak=4.04328%, clear fail | checks passed
+Completed 2026-11-23T13:20:12.588094+00:00

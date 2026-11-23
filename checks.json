@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "group": "G22",
+  "dataset": "regular",
+  "revision": "be7c6f0ff54c0d417dd602932d0225640f2bc1dd",
+  "schema_matches": true,
+  "published_L1_quadrature_rtol": 1e-06,
+  "measurement_indices": 58,
+  "L2_pair_rms": 0.013314826401803473,
+  "L2_resamples": 200,
+  "L3_independent_KKT_max_error": 8.959152864029818e-14,
+  "L3_independent_noise_limit": 0.000157645731997452,
+  "max_fraction": 0.028358802285460297,
+  "spatial_decision": "clear pass",
+  "figure_files_checked": 18
+}

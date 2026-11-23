@@ -1,0 +1,140 @@
+{
+  "input_sha256": {
+    "blind_results.json": "6daf094bfa06e4449a11b549b6863903fc2d5269b2f21bd4169fcfd7bde9320b",
+    "L1_data.csv": "5d7c0f99aa7c951cec84d08a9d20f8bda7296434a2bb48322369db6e4835ac44",
+    "L1_params.json": "210d3bbdc30efa7de5616aa5ad34caa6f8752c88bc0f3596b3909b71bb176775",
+    "L2_data.csv": "2498ec79f8485e00f4d63dee3546ec5be6340de68fd207c25800a6b63bff9047",
+    "L2_meta.json": "39d44fcc1e2221291bc6fff8cc4ea46f47c1d364b3e2cb49e4962b1ec3ea660d",
+    "L3_A.npy": "4783c2c21d21c9c24d82be9b05a264331a9123b113785be3849398d8ee4d0cd5",
+    "L3_d.csv": "46a15a2abcc6193e1df7be1520511b8d1d3dec972dc7c1f7d5320cfecc6bd6b2",
+    "L3_meta.json": "873b6f400383596c9913680a574a07dd08336ae3bbc31d8a79d3d41f3a146578",
+    "manifest.json": "2b3b70ca0f5a166a4fc0add0bfb321edd3c3338b42abbebbb70b136346c8ccd6",
+    "README_FIRST.txt": "2efa0368cccd7b281238e27bc972b3dd44a36d3020f13ef662a1d5de8f1d6e3b"
+  },
+  "L1": {
+    "parameters": {
+      "c": 0.04431796434819671,
+      "T": 300.0,
+      "EF_op_eV": 0.12397258842642686,
+      "rho_ohm_sq": 378.2752878241902,
+      "columns": [
+        "EF_eV",
+        "n_band_cm2",
+        "rho_ohm_sq"
+      ],
+      "note": "n_band is the finite-temperature band-edge integral from E=0. Recover the Fermi-referenced count by integrating from E=EF, then calculate the mobility correction.",
+      "group": "G22",
+      "dataset_set": "blind",
+      "schema_version": "QXU6028-data-v1"
+    },
+    "checks": {
+      "0.0": 0.9999988155901128,
+      "0.073": 2.0049399641040173,
+      "0.1": 2.5988457831720226,
+      "0.2": 5.104375523563375
+    },
+    "n_band_op_cm2": 1484586237168.5088,
+    "mobility_band_cm2_Vs": 11114.148768983281,
+    "crossings_eV": {
+      "2": 0.07276186951835047,
+      "4": 0.1573468452128352
+    },
+    "numerical_closed_relative_error": 2.9661560141391874e-07
+  },
+  "L2": {
+    "T_K": 300.0,
+    "measurement_count": 45,
+    "seed": 602822,
+    "bootstrap_runs": 200,
+    "uncertainty_field_definition": "[16th percentile, 84th percentile] of selected gaps, consistent with the supplied historical G22 checkpoint.",
+    "gap_bootstrap_median_kT": 0.0,
+    "gap_bootstrap_interval_kT": [
+      0.0,
+      0.0
+    ],
+    "hard_gap_selection_fraction": 0.04,
+    "r_cone": 0.01571691297743584,
+    "r_best_gap": 0.01742399124695012,
+    "best_gap_candidate_kT": 0.5,
+    "residual_ratio": 1.1086140943813245,
+    "zero_crossing_brackets": [
+      [
+        26,
+        27
+      ]
+    ],
+    "EF_min_eV": -0.0702345035488722,
+    "EF_max_eV": 0.08286893915037591,
+    "selected_curve_pair_RMS": 0.01571691297743584
+  },
+  "L3": {
+    "seed": 602823,
+    "noise_runs": 500,
+    "max_absolute_row_sum": 1.6653345369377348e-16,
+    "map_mean": -6.938893903907229e-19,
+    "eta0": 0.0013309924629099198,
+    "eta_selected": 1.3309924629099198e-05,
+    "eta_factor_selected": 0.01,
+    "eta_selection_reason": "Use eta0 unless its residual exceeds 3 times the estimated mean-scan noise norm; then select the tested factor closest to that noise norm on a log scale. No hidden truth used.",
+    "threshold_fraction": 0.03,
+    "maximum_fraction": 0.04043284640507952,
+    "decision_envelope_fraction": [
+      0.04040760109995746,
+      0.04045809171020158
+    ],
+    "detection_noise_convention": "Channel-wise sample SD of single scans (ddof=1), as prescribed; not divided by sqrt(3).",
+    "noise_sd_median": 2.2150883241799615e-07,
+    "mean_scan_noise_norm_estimate": 1.6970306244196198e-06,
+    "eta0_residual_norm": 0.00020362728781793486,
+    "residual_norm": 3.3196346572441155e-06,
+    "resolution_method": "Prescribed positive-lobe second-moment FWHM equivalent",
+    "resolution_positions_row_column": [
+      [
+        5,
+        5
+      ],
+      [
+        2,
+        7
+      ]
+    ],
+    "resolution_values_probe_pitch": [
+      1.6664129513780226,
+      1.725788496564373
+    ],
+    "numerical_rank": 92,
+    "feature_threshold_rule": "8-connected sign-specific regions above max(delta95, 0.35 times sign-specific maximum)",
+    "noise_sensitivity": {
+      "1": {
+        "map_noise_RMS_median": 6.332956720769435e-06,
+        "maximum_amplitude_p05_p95": [
+          0.04042578280939563,
+          0.04043936577426595
+        ],
+        "detection_limit_fraction": 2.5245305122058035e-05
+      },
+      "2": {
+        "map_noise_RMS_median": 1.266591344153887e-05,
+        "maximum_amplitude_p05_p95": [
+          0.04041871921371173,
+          0.04044588514345237
+        ],
+        "detection_limit_fraction": 5.049061024411607e-05
+      },
+      "4": {
+        "map_noise_RMS_median": 2.533182688307774e-05,
+        "maximum_amplitude_p05_p95": [
+          0.04040459202234393,
+          0.040458923881825225
+        ],
+        "detection_limit_fraction": 0.00010098122048823214
+      }
+    }
+  },
+  "environment": {
+    "python": "3.15.2",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "matplotlib": "3.11.2"
+  }
+}

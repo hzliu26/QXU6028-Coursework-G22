@@ -1,0 +1,17 @@
+pipeline_commit=1af8f668f8c4e8b8edd4a283300ae307f3de28c9
+numpy_version=2.3.5
+matplotlib_version=3.10.8
+group=G22
+rows=174
+measurement_indices=58
+energy_points=4000
+EF_points=400
+candidate_models=32
+bootstrap_runs=200
+bootstrap_seed=2202026
+original_input_sha256=passed
+paired_repeat_structure=passed
+carrier_neutrality=passed
+normalisation_and_Hall_orientation=passed
+JSON_keys_and_trajectory_length=passed
+L3=not_yet_analysed
